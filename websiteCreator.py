@@ -10,6 +10,8 @@ data_df = data_df.loc[data_df['Name'].notnull()]
 categories_df = data_df['Category'].unique()
 category_list = []
 governate_list = []
+phone_number_str = ""
+phone_number = int
 for category in categories_df:
     category_list.append(data_df[data_df['Category'] == category])
 
@@ -75,8 +77,10 @@ with open('index.html', 'w', encoding='utf8') as website:
                         f'<span><em>{item["Notes"].strip()}</em></span><br/>'  # Location IF exists {{row[Notes]}}
                         )
                 if not(isnan(item["Phone Number"])):
+                    phone_number = int(item["Phone Number"])
+                    phone_number_str = str("0" + str(phone_number)) if len(str(phone_number)) == 7 else str(phone_number)
                     website.writelines(
-                                            f'<a href="tel:00961{int(item["Phone Number"])}">{str(int(item["Phone Number"]))[:2] + " " + str(int(item["Phone Number"]))[2:5] + " " + str(int(item["Phone Number"]))[5::]}</a>' # change phone number and add IF exists {{row[Phone Number]}}
+                                            f'<a href="tel:00961{int(item["Phone Number"])}">{phone_number_str[:2] + " " + phone_number_str[2:5] + " " + phone_number_str[5::]}</a>' # change phone number and add IF exists {{row[Phone Number]}}
                     )
                 website.writelines(
                                         '</h2>'
