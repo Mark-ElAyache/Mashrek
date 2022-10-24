@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="locations.css">
+    <title>Mashrek Hospitals</title>
+</head>
+<body>
+    <a href="https://www.almashrek.com.lb/"><img src="./Mashrek Logo.png" alt=""></a>
+    
+    <div class="accordion" id="accordionHeading">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hospitals">
+                  <h1>Hospitals</h1>
+                </button>
+            </h2>
+            <div id="hospitals" class="accordion-collapse collapse" data-bs-parent="#accordionHeading">
+                <div class="accordion-body">
+                    <section class="accordion">
+
+                        <!-- <div id="akkar" class="accordion-item">
+                            <h1 class="accordion-header sticky" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    <h1>Akkar</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseOne" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+                                <div class="accordion-body">
+                                    <h2>Rizik</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="baalbek" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    <h1>Baalbek</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseTwo" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+                                <div class="accordion-body">
+                                    <h2>Rizik</h2>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div id="beirut" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    <h1>Beirut</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseThree" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+                                <div class="accordion-body">
+                                    <h2><a href="https://www.google.com/maps/place/H%C3%B4tel-Dieu+de+France/@33.8815725,35.5167865,17z/data=!3m1!4b1!4m5!3m4!1s0x151f1701260d0ffd:0xf04b4e8a38f2786a!8m2!3d33.8815681!4d35.5189752">
+                                        Hôtel-Dieu de France
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://www.google.com/maps/place/LAU+Medical+Center-Rizk+Hospital/@33.8852684,35.5128443,17z/data=!3m1!4b1!4m5!3m4!1s0x151f170247c61139:0xd9ea41e9cfc6011e!8m2!3d33.885264!4d35.515033">
+                                        Rizk LAU
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://www.google.com/maps/place/Saint+George+Hospital+University+Medical+Center/@33.8937793,35.5214703,17z/data=!3m1!4b1!4m5!3m4!1s0x151f16578cc4ed53:0x8a62fdc029d3f29b!8m2!3d33.8937793!4d35.523659">
+                                        Saint George Hospital University Medical Center (Orthodox Achrafieh)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/gKZ8NvCVPPqJAqer6">
+                                        American University Hospital (AUH)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/W4t3MU7ZSey9Voae7">
+                                        Clemenceau Medical Center (CMC)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/hlgchu?share">
+                                        Geitawi Libanais Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/4daemsvhRUzFWxyq6">
+                                        Bahman Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/k7j3M7B74FrVsJYq9">
+                                        Sahel Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/alrassoul?share">
+                                        Rassoul Al Aazam Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/BESHHospital?share">
+                                        Beirut Eye Specialist Hospital (BESH)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/5WoxdjFeTjch1rZk8">
+                                        Najjar Hospital
+                                    </a></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="beqaa" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    <h1>Beqaa</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseFour" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/RJZhZoeezeC6ZRPj8">
+                                        Tel Chiha Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/PNiXU8Apk4qZNzr68">
+                                        Khoury General Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/gTym2vY5LDZaWpuZ7">
+                                        Bekaa Hospital
+                                    </a></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="keserwan" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    <h1>Keserwan - Jbeil</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseFive" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/a77vfa9AHdAeCUGA8">
+                                        Maritime hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/y8EQRyqe42BPrQnu7">
+                                        Notre Dame de Secours Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/keserwanmedicalcenter?share">
+                                        Keserwan Medical Center (KMC)
+                                    </a></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="metn" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                    <h1>Metn</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseSix" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/montlibanhopital?share">
+                                        Mount Lebanon Hospital (MLH)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/YzzGJ6Y5xKgceSHi6">
+                                        Lebanese Healthcare Management (Notre Dame University Hospital) (HNDL)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/2AdinTiVnFSDG7Yn9">
+                                        Hopital Saint Joseph (HSJ)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/CyQzn8JmbWGBEJ5o9">
+                                        Bhannes Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/bellevuelebanon?share">
+                                        Bellevue Medical Center (BMC)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/hopitalaboujaoude?share">
+                                        Abou Jaoude Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/eyeandearhospital?share">
+                                        Eye and Ear Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/heoL4mhgSt7xBwn16">
+                                        Hayeck Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/Tke9bqhgQ89YsVwp6">
+                                        Clinic du Levant
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/wUKgXG8dYSb4nuYw5">
+                                        Siblin Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/LSARM9fqyTarM6SN8">
+                                        Saint Charles Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/L7JumKiufB2oHmtG6">
+                                        Bchamoun Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/jxN182cUnupcjebx5">
+                                        Al Jabal Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/V2WANK6mpPk417Cn8">
+                                        Arz Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/MEIHUH?share">
+                                        The Middle East Institute of Health
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/iQoxywcF592UWiLw7">
+                                        Serhal Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/wNVM9ioB1Afh7RoK7">
+                                        Al Iman Hospital
+                                    </a></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="nabatieh" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                                    <h1>Nabatieh</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseSeven" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/XrSvjBs9GLabuP6K8">
+                                        Sheikh Ragheb Harb Hospital
+                                    </a></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="north" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                                    <h1>North</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseEight" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/tRXxroKeMKy4FDWd7">
+                                        Centre Hospitalier Nord (CHN)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/haykelhospital?share">
+                                        Haykal Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/L6qmb3N1aLdaTLQA8">
+                                        NINI Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/6k7GvFEAg3X1xoa86">
+                                        Family Medical Center (FMC)
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/nv7QnT3g8nt1argKA">
+                                        Batroun Hospital
+                                    </a></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="south" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                                    <h1>South</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseNine" class="accordion-collapse collapse"  data-bs-parent="#hospitals">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/dztjq4yAqdmnYYSa9">
+                                        LABIB Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/8BSJDYjgPSXC4JcCA">
+                                        Jabal Aamel Hospital
+                                    </a></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/VV7dmaWAtaCA7vuN7">
+                                        Jezzine Hospital
+                                    </a></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#clinic">
+                  <h1>Clinics</h1>
+                </button>
+            </h2>
+            <div id="clinic" class="accordion-collapse collapse" data-bs-parent="#accordionHeading">
+                <div class="accordion-body">
+                    <section class="accordion">
+
+                        <!-- <div id="akkar" class="accordion-item">
+                            <h1 class="accordion-header sticky" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneB">
+                                    <h1>Akkar</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseOneB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/VV7dmaWAtaCA7vuN7">
+                                        Jezzine Hospital
+                                    </a></h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="baalbek" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoB">
+                                    <h1>Baalbek</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseTwoB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/VV7dmaWAtaCA7vuN7">
+                                        Jezzine Hospital
+                                    </a></h2>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div id="beirut" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeB">
+                                    <h1>Beirut</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseThreeB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/Ldpy76PUpH69RJpr8">
+                                        St. Marc
+                                    </a><br/><span>Achrafieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/NZ1bwxvcpogoonG7A">
+                                        Centre St. Bernard
+                                    </a><br/><span>Achrafieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/abclaboratories?share">
+                                        Achrafieh Biomedical Center (ABC Lab)
+                                    </a><br/><span>Achrafieh</span></h2>
+                                </div>
+
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/8qiX5gDXQTYYn35t7">
+                                        CEMA
+                                    </a><br/><span>Bechara El Khoury</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/xRX9WFyNPDWi78af7">
+                                        Laboratoires du Musée
+                                    </a><br/><span>Mathaf</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/hteJsHom9vyL3KaHA">
+                                        Aya Lab
+                                    </a><br/><span>Haret Hreik</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/haaCjzfPexbCakp56">
+                                        Midtown Medical Center
+                                    </a><br/><span>Msaytbeh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/3VGftADAvcDoidSk7">
+                                        Doctor's Center Laboratories
+                                    </a><br/><span>Hamra</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/GADP567dsBxg7q9n9">
+                                        B Positive Medical Services
+                                    </a><br/><span>Hamra</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/maplablb?share">
+                                        Medical Analysis and Pathology (MAP)
+                                    </a><br/><span>Hamra</span></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="beqaa" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourB">
+                                    <h1>Beqaa</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseFourB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/tJ2QvhCt1qHSbmX36">
+                                        Medical Care Center (MCC) Lab/Radiology
+                                    </a><br/><span>Zahle</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/1nVpzbYDcnbdGPvt6">
+                                        Health Diagnostic Center (HDC)
+                                    </a><br/><span>Chtoura</span></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="keserwan" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveB">
+                                    <h1>Keserwan - Jbeil</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseFiveB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/labo-chelala?share">
+                                        Laboratoires Dr. Chelala
+                                    </a><br/><span>Ghazir</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://g.page/memerlab?share">
+                                        Memerlab
+                                    </a><br/><span>Sarba</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/EPQzdPkjMxR92Aap7">
+                                        Optimum Santé
+                                    </a><br/><span>Jeita</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/LHzRhTPn2a5JZUCt5">
+                                        Laboratoires St Charbel D'analyses Medicales
+                                    </a><br/><span>Bouar</span></h2>
+                                </div>
+
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/apUAeCGdNcdEPEGx8">
+                                        Laboratoires Saliba D'analyses Medicales
+                                    </a><br/><span>Jbeil</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/k4s6DtL31rv5iZXP9">
+                                        Centre Medicale St. Paul
+                                    </a><br/><span>Jbeil</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/z6hiSKBjTgFuTEFY8">
+                                        Centre Jounieh de Radiologie
+                                    </a><br/><span>Jounieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/8xMW2VL5rGyPPwfMA">
+                                        Lab Dr. Elie Taleb
+                                    </a><br/><span>Jounieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/X46uosFkTQdHEsjMA">
+                                        Centre Medicale Wakim
+                                    </a><br/><span>Jounieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/DEp7bt5A1oSyQaUe6">
+                                        Labtest Medical Laboratories
+                                    </a><br/><span>Zouk Mkayel</span></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="metn" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixB">
+                                    <h1>Metn</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseSixB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/1P7AkyzZ5NHWuB5HA">
+                                        St. Marc
+                                    </a><br/><span>Zalka</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/Cc2nfWDsiaih3jnP8">
+                                        BMP
+                                    </a><br/><span>Zouk Mosbeh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/zesqgkV1SbsTmvnB7">
+                                        Elite Medical Center
+                                    </a><br/><span>Zouk Mosbeh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/RnRfCoZjBfcAtdup7">
+                                        Laboratoires Dr. Elie Hraoui
+                                    </a><br/><span>Dora</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/RnRfCoZjBfcAtdup7">
+                                        Laboratoires Scientifiques
+                                    </a><br/><span>Mtayleb</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/RnRfCoZjBfcAtdup7">
+                                        MTM Group
+                                    </a><br/><span>Jdeideh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/8cRsxRWngqcP7egm9">
+                                        PET CT Scan Experts
+                                    </a><br/><span>Sin El Fil</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/TngA8tS5NQkzuSdZA">
+                                        Laboratoire Dr. Joseph Mrad
+                                    </a><br/><span>Mazraat Yachouh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/MJ2ue5kc1YUZTzas8">
+                                        Test & Care
+                                    </a><br/><span>Qornet Chehwan</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/yGF7AU41vc6xEFBh7">
+                                        Get Medical Laboratory
+                                    </a><br/><span>Hazmieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/FoiQtE96S8sK3bvE8">
+                                        Lab Dekwaneh D'analyses Medicales
+                                    </a><br/><span>Dekwaneh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/Wuuiy1fUB4xiPend9">
+                                        Day and Night Clinic
+                                    </a><br/><span>Dbayeh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/TD9ihgar7aB5zuar9">
+                                        St. Michel Medical Center
+                                    </a><br/><span>Dbayeh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/1ExVoM6skzptrQaWA">
+                                        Dr. Hindi Medical Laboratories SAL
+                                    </a><br/><span>Jal El Dib</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/TD9ihgar7aB5zuar9">
+                                        Medzone Laboratories
+                                    </a><br/><span>Baouchrieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/bk8J3bUEg3uPStRA8">
+                                        Expert Medical Diagnostics
+                                    </a><br/><span>Manshourieh</span></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="nabatieh" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenB">
+                                    <h1>Nabatieh</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseSevenB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/bEVkcxbXBDE9W44x8">
+                                        Salam Lab for Medical Analysis
+                                    </a><br/><span>Nabatieh</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/h68UGSSoXoAyiusv9">
+                                        Al Sabbah Laboratories
+                                    </a><br/><span>Nabatieh</span></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="north" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEightB">
+                                    <h1>North</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseEightB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/CDN8Z8sa8ziTEk4i8">
+                                        Lab Albert Azar
+                                    </a><br/><span>Tripoli</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/s7PbhYoxp9QyHn3DA">
+                                        Dagher Laboratories
+                                    </a><br/><span>Batroun/Chekka/Koura/Ras Nhach</span></h2>
+                                </div>
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/GSKMcdSDeS9zyN9P6">
+                                        Lab Dr. Elie Taleb
+                                    </a><br/><span>Batroun</span></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="south" class="accordion-item">
+                            <h1 class="accordion-header sticky">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineB">
+                                    <h1>South</h1>
+                                </button>
+                            </h1>
+                            <div id="collapseNineB" class="accordion-collapse collapse"  data-bs-parent="#clinic">
+                                
+                                <div class="accordion-body">
+                                    <h2><a href="https://goo.gl/maps/RnRfCoZjBfcAtdup7">
+                                        Laboratoires Baydoun
+                                    </a><br/><span>Tyre</span></h2>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header sticky" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMainThree">
+                  <h1>Physiotherapy</h1>
+                </button>
+            </h2>
+            <div id="collapseMainThree" class="accordion-collapse collapse" data-bs-parent="#accordionHeading">
+                
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Get Well Center<br/>(Dr. Sawsan Haidar)</strong><br/>
+                        Hamra<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Beirut Center For Physiotherapy<br/>(Dr. Maher Fathallah)</strong><br/>
+                        Corniche Al Mazraa<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Dr. Antoine Daher</strong><br/>
+                        Jal El Dib<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Dr. Charles Morcos</strong><br/>
+                        Sin El Fil<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Dr. Georges Charbel El Helou</strong><br/>
+                        Hadath<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Centre Nabil Khalife de Physiotherapie</strong><br/>
+                        Hazmieh<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Dr. Khalife Khalife Physio Center</strong><br/>
+                        Dekweneh<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Dr. Ghassan Adib Akiki</strong><br/>
+                        Zouk Mosbeh<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Centre Antoine H. Bou Younes de Physiotherapie</strong><br/>
+                        Zouk Mkayel / Jal El Dib<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Dr. Samer Ghosn Physical Therapy Clinic</strong><br/>
+                        Aley<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Nabil Fadel Physical Therapy Center</strong><br/>
+                        Bcahmoun<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+                <div class="accordion-body">
+                    <h2>
+                        <strong>Roy Rai Clinic</strong><br/>
+                        Antelias<br/>
+                        <a href="tel:0096170000000">70 000 000</a>
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <button type="button"><h1>Nearest Hospital</h1></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>    
+</body>
+</html>
