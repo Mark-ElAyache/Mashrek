@@ -60,6 +60,7 @@ with open('index.html', 'w', encoding='utf8') as website:
             )
     # FOR LOOP FOR NAME
             for item in row:
+                print(item["Name"])
                 website.writelines(
                                     '<div class="accordion-body">'
                                         '<h2>'                    
